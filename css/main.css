@@ -145,6 +145,8 @@ section .mockup{
     transition: .6s;
     transition-delay: .3s;
     transform: translateY(-50%);
+    width: 80%;
+    height: 70vh;
 }
 section.on .card{
     position: absolute;
@@ -179,4 +181,11 @@ section.on .mockup{
 .menu a.on{
     background:#ffa;
     outline: 3px solid #333;
+}
+
+/* mockup */
+#work01 .mockup{
+    background: url(../img/01cardmockup.png);
+    background-size: cover;
+    background-position: center center;
 }
