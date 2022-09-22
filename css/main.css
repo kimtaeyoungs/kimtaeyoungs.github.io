@@ -147,7 +147,28 @@ section .mockup{
     transform: translateY(-50%);
     width: 80%;
     height: 70vh;
+    cursor: pointer;
 }
+section .mockup::after{
+    content: "자세히 보기";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    background: rgba(0,0,0,.6);
+    line-height: 70vh;
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+    transition: .3s;
+    opacity: 0;
+}
+section .mockup:hover:after{
+    content: "자세히 보기";
+    opacity: 1;
+}
+
 section.on .card{
     position: absolute;
     top:379px;
