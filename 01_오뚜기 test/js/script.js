@@ -8,3 +8,12 @@ $(".sns_tab li a").click(
     }
 );
 
+$('.main-slide').slick({
+    dots:true,
+    // fade:true,
+    prevArrow:$('.prev'),
+    nextArrow:$('.next'),
+    autoplay:true,
+    autoplaySpeed:2000,
+    pauseonhover:true
+});

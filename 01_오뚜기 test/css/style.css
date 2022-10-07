@@ -40,10 +40,10 @@ header{width:100%; background:#fef100;
 #slide{overflow:hidden; width:80%;}
 #slide img{width: 100%;}
 #slide ul{display:flex; width:600%;
-    animation:fade 18s infinite;
+    /* animation:fade 18s infinite; */
 }
 
-@keyframes fade{
+/* @keyframes fade{
     0%{margin-left:0; opacity:0;}
     1%{margin-left:0; opacity:1;}
     15.6%{margin-left:0; opacity:1;}
@@ -73,7 +73,7 @@ header{width:100%; background:#fef100;
     84.1%{margin-left:-500%; opacity:1;}
     99%{margin-left:-500%; opacity:1;}
     100%{margin-left:-500%; opacity:0;}
-}
+} */
 
 #news{width:80%;}
 .imgbox{display:flex;}

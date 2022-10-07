@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
     <title>오뚜기</title>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slick-style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
 </head>
 <body>
     <header>
@@ -37,8 +40,12 @@
 
         
     </header>
-    <div id="slide">
-        <ul>
+    <div class="slide-wrap">
+
+        <div class="arrow prev"><i class="xi-angle-left"></i></div>
+        <div class="arrow next"><i class="xi-angle-right"></i></div>
+
+        <ul class="main-slide">
             <li><a href="#none"><img src="img/img_visual21.jpg" alt="슬라이드1"></a></li>
             <li><a href="#none"><img src="img/img_visual22.jpg" alt="슬라이드2"></a></li>
             <li><a href="#none"><img src="img/img_visual23.jpg" alt="슬라이드3"></a></li>
@@ -46,6 +53,7 @@
             <li><a href="#none"><img src="img/img_visual25.jpg" alt="슬라이드5"></a></li>
             <li><a href="#none"><img src="img/img_visual26.jpg" alt="슬라이드6"></a></li>
         </ul>
+
     </div>
     <div id="news">
         <ul class="imgbox">

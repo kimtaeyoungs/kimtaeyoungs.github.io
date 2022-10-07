@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <style>
+        *{margin: 0; padding: 0;}
+        li{list-style: none;}
+        img{width: 100%;}
+        .fakeimg{
+            width: 200px;
+            height: 200px;
+            background: #ccc;
+        }
+        .slide{
+            width: 70%;
+            margin: 0 auto;
+            background: #666;
+        }
+        .slide-wrap{
+            position: relative;
+        }
+        .arrow{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .prev{
+            left: 10%;
+        }
+        .next{
+            right: 10%;
+        }
+        .slide{
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-wrap">
+        <div class="arrow prev"><i class="xi-angle-left"></i></div>
+        <div class="arrow next"><i class="xi-angle-right"></i></div>
+        <ul class="slide">
+            <li>
+                <div class="fakeimg"></div>
+                <div class="text">
+                    제목1<Br>
+                    내용
+                </div>
+            </li>
+            <li>
+                <div class="fakeimg"></div>
+                <div class="text">
+                    제목2<Br>
+                    내용
+                </div>
+            </li>
+            <li>
+                <div class="fakeimg"></div>
+                <div class="text">
+                    제목3<Br>
+                    내용
+                </div>
+            </li>
+            <li>
+                <div class="fakeimg"></div>
+                <div class="text">
+                    제목4<Br>
+                    내용
+                </div>
+            </li>
+            <li>
+                <div class="fakeimg"></div>
+                <div class="text">
+                    제목5<Br>
+                    내용
+                </div>
+            </li>
+            <li>
+                <div class="fakeimg"></div>
+                <div class="text">
+                    제목6<Br>
+                    내용
+                </div>
+            </li>
+            <li>
+                <div class="fakeimg"></div>
+                <div class="text">
+                    제목7<Br>
+                    내용
+                </div>
+            </li>
+            <li>
+                <div class="fakeimg"></div>
+                <div class="text">
+                    제목8<Br>
+                    내용
+                </div>
+            </li>
+            <li>
+                <div class="fakeimg"></div>
+                <div class="text">
+                    제목9<Br>
+                    내용
+                </div>
+            </li>
+            <li>
+                <div class="fakeimg"></div>
+                <div class="text">
+                    제목10<Br>
+                    내용
+                </div>
+            </li>
+            <li>
+                <div class="fakeimg"></div>
+                <div class="text">
+                    제목11<Br>
+                    내용
+                </div>
+            </li>
+            <li>
+                <div class="fakeimg"></div>
+                <div class="text">
+                    제목12<Br>
+                    내용
+                </div>
+            </li>
+        </ul>
+    </div>
+    
+    <script>
+        $('.slide').slick({
+            slidesToShow:5,
+            slidesToScroll:3,
+            prevArrow:$('.prev'),
+            nextArrow:$('.next')
+        });
+    </script>
+</body>
+</html>
