@@ -2,10 +2,10 @@
 var title = document.querySelector("#intro .title");
 var section = document.querySelectorAll("section");
 window.addEventListener("wheel", go);
-document.querySelector(".menu")
+document.querySelector(".nav")
 .addEventListener("click", goSection);
 $(".gnb").click(goSection);
-//$(".menu").click(goSection);
+$(".nav").click(goSection);
 var offset = 0;
 var sectionCounter = 0;
 var count = 0;
@@ -24,46 +24,52 @@ function go(e){
     offset = innerHeight * sectionCounter; //innerWidth, scrollLeft
     $("html, body").stop().animate({scrollTop:offset},600,"easeInOutExpo");
 
+    if(sectionCounter > 0){
+        $(".menu").addClass("on");
+    }else{
+        $(".menu").removeClass("on");
+    }
+    console.log(sectionCounter);
     setTimeout(activeMenu,300);
 }
 
 function activeMenu(){
-    // section.forEach(function(ele){ele.classList.remove("on");});
+    section.forEach(function(ele){ele.classList.remove("on");});
     for(var i=0; i<section.length; i++){
         section[i].classList.remove("on");
     }
     section[sectionCounter].classList.add("on");
     
-    $(".menu a").removeClass("on");
-    $(".menu li").eq(sectionCounter).children("a").addClass("on");
+    $(".nav a").removeClass("on");
+    $(".nav li").eq(sectionCounter).children("a").addClass("on");
     $(".gnb a").removeClass("active");
     $(".gnb li").eq(sectionCounter).children("a").addClass("active");
 }
 
 function goSection(e){
     sectionCounter = e.target.getAttribute("datanum");
-    $(".menu a").removeClass("on");
+    $(".nav a").removeClass("on");
     e.target.classList.add("on");
     $(".gnb a").removeClass("active");
     e.target.classList.add("active");
-    
 
     offset = innerHeight * sectionCounter; //innerWidth, scrollLeft
     $("html, body").stop().animate({scrollTop:offset},600,"easeInOutExpo");
 
     setTimeout(activeMenu,300);
+    
 }
 
 function goSection(e){
     sectionCounter = e.target.getAttribute("datanum");
     $("nav a").removeClass("on");
     e.target.classList.add("on");
-    
 
     offset = innerHeight * sectionCounter; //innerWidth, scrollLeft
     $("html, body").stop().animate({scrollTop:offset},600,"easeInOutExpo");
 
     setTimeout(activeMenu,300);
+  
 }
 
 // 스크롤 막기 시작

@@ -14,9 +14,6 @@
 </head>
 
 <body>
-    <video autoplay loop muted id="bgvideo">
-        <source src="bgvideo.mp4" type="video/mp4">
-    </video>
 
     <div class="burger">
         <div class="bar"></div>
@@ -27,46 +24,80 @@
 
     <nav>
         <ul class="gnb">
-            <li><a href="#" datanum="0" class="active">intro</a></li>
-            <li><a href="#" datanum="1">profile</a></li>
-            <li><a href="#" datanum="2">section$</a></li>
-            <li><a href="#" datanum="3">section$</a></li>
+            <li><a href="#">about me</a></li>
+            <li><a href="#" datanum="0" class="active">profile</a></li>
+            <li><a href="#" datanum="1">project</a></li>
+            <li><a href="#" datanum="2">project</a></li>
+            <li><a href="#" datanum="3">footer</a></li>
             <li><a href="#" datanum="4">section$</a></li>
-            <li><a href="#" datanum="5">section$</a></li>
         </ul>
     </nav>
 
-    <ul class="menu">
-        <li><a href="#none" dataNum="0" class="on"></a></li>    
-        <li><a href="#none" dataNum="1"></a></li>
-        <li><a href="#none" dataNum="2"></a></li>
-        <li><a href="#none" dataNum="3"></a></li>
-        <li><a href="#none" dataNum="4"></a></li>
-        <li><a href="#none" dataNum="5"></a></li>
-    </ul>
+    <div class="menu">
+        <ul class="portfolio">
+            <li><a href="#none">KTY's PortFolio</a></li>    
+        </ul>
+    
+        <ul class="nav">
+            <li><a href="#none" dataNum="0" class="on">about me</a></li>
+            <li><a href="#none" dataNum="1">profile</a></li>
+            <li><a href="#none" dataNum="2">project</a></li>
+            <li><a href="#none" dataNum="3">footer</a></li>
+        </ul>
+    </div>
+   
 
     <div id="wrap">
         <section id="intro">
-            <div class="title">
-                <object data="img/title.svg" type="">
-                    <img src="img/title.svg" alt="">
-                </object>
-                <!-- <h1>Portfolio</h1>
-                <p>김태영의 포트폴리오</p> -->
+            <div id="about">
+                <div class="name">
+                    <h1>-김태영-</h1>
+                </div>
+                <div class="connect">
+                    <p>안녕하세요.</p>
+                    <p>항상 준비하고 발전하기 위해 노력하는 웹 개발자 입니다.</p>
+                </div>
             </div>
         </section>
-        <section id="profile">
-            
-            <div class="btn">
-                <div class="btn-text">다크 모드</div>
-                <div class="btn-circle"></div>
-            </div>
 
-            <div class="title">
-                <h1>프로필</h1>
-                <p>프로필</p>
+        <section id="profile">
+            <div id="notice">
+                <div class="timeline">
+                    <div class="box">
+                        <div class="box_info">
+                            <h1>학력사항</h1>
+                        </div>
+
+                    </div>
+                    <div class="box">
+                        <h1>경력사항</h1>
+                    </div>
+                    <div class="box">
+                        <h1>자격사항</h1>
+                    </div>
+                    <div class="box">
+                        <h1>SKILL</h1>
+                    </div>
+                </div>
             </div>
+    
+            <div id="title">
+                <img src="img/KTY.png" alt="">
+                <div id="texting">
+                    <h1>김태영</h1>
+                    <h1>Kim Tae Young</h1>
+                    <p>1997. 11. 06</p>
+                    <p>wkvuddnjf22@naver.com</p>
+                    <p>010.1111.2222</p>
+                </div>
+                </div>
         </section>
+
+
+
+
+
+
         <section id="work01">
             <div class="card">
                 <img src="img/01card.png" alt="">

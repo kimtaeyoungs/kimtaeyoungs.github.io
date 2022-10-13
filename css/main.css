@@ -52,11 +52,12 @@ section{
     position: fixed;
     top: 40px; right: 40px;
     z-index: 999999;
+    display: none;
 }
 .burger .bar{
     width: 40px;
     height: 8px;
-    background: #fff;
+    background: #666;
     position: absolute;
 }
 .burger .bar:nth-child(2),
@@ -113,10 +114,6 @@ nav .gnb a.active{
     background: #ccc;
 }   
 
-
-
-
-
 section:nth-child(even){
     background:#eee;
 }
@@ -131,11 +128,48 @@ section:nth-child(even){
     font-size: 3rem;
 }
 
-#profile .title{
+#about{
     position: absolute;
-    top:50%; left:50%;
+    top: 50%; left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
+#about .name{font-size: 2rem;}
+#about .connect{font-size: 1.2rem;}
+
+/* profile */
+
+#notice{
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    top: 20%;
+    left: 30px;
+}
+#title{
+    width: 20%;
+    height: 80%;
+    position: absolute;
+    top: 20%; right: 0px;
+}
+#title img{
+    padding-bottom: 50px;
+}
+#texting{
+    line-height: 40px;
+}
+.box{
+    width: 100%;
+    height: 20vh;
+}
+.timeline{
+    position: absolute;
+    left: 30px;
+    top: -10%;
+}
+
+
+
 
 section .card{
     position: absolute;
@@ -192,23 +226,55 @@ section.on .mockup{
 .menu{
     position: fixed;
     display: flex;
-    bottom:40px;
+    justify-content: space-between;
+    width:100%;
+    top: 0px;
     left:50%;
     transform: translateX(-50%);
     z-index: 9999;
+    height: 80px;
+    transition: .3s;
 }
+.menu.on{
+    background: rgb(227, 243, 7);
+}   
+
+.portfolio{
+    width: 70%;
+    padding-left: 30px; 
+    font-size: 1.5rem;
+}
+.portfolio li{width: 70%;}
+.portfolio a{width: 100%;}
+
+.nav{
+    width: 30%;
+    display: flex;
+}
+.nav li a{
+    width: 100%;
+    display: flex;
+}
+
 .menu a{
-    width:24px;
-    height:24px;
-    background:#333;
-    border-radius: 12px;
     margin: 24px;
     transition: .3s;
 }
-.menu a.on{
-    background:#ffa;
-    outline: 3px solid #333;
+/* .menu li:nth-child(1){
+    width: 70%;
 }
+.menu li a:nth-child(1){
+    width: 100px;
+} */
+
+.menu a.on{
+    color: rgb(253, 114, 0);
+}
+
+
+
+
+
 
 /* mockup */
 #work01 .mockup{
@@ -224,7 +290,7 @@ section.on .mockup{
 
 
 /*  */
-.btn{
+/* .btn{
     width:120px; height:40px;
     border-radius: 20px;
     background:var(--btn-bg);
@@ -258,4 +324,4 @@ section.on .mockup{
 #profile.active{
     background:var(--btn-bg);
     color:var(--btn-color);
-}
+} */
