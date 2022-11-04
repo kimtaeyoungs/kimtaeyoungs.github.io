@@ -139,8 +139,8 @@ section:nth-child(even){
 
 /* profile */
 
-.groub1 img,.groub2 img{width: 400px;}
-
+.groub1 img{width: 400px;}
+.groub2 img{width: 385px;}
 .groub3 img{width: 600px;}
 
 
