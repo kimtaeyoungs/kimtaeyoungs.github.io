@@ -33,7 +33,7 @@ function go(e){
     setTimeout(activeMenu,300);
 }
 
-function activeMenu(){
+function activeMenu(){ //휠을 이용한 메뉴이동
     section.forEach(function(ele){ele.classList.remove("on");});
     for(var i=0; i<section.length; i++){
         section[i].classList.remove("on");
@@ -46,7 +46,7 @@ function activeMenu(){
     $(".gnb li").eq(sectionCounter).children("a").addClass("active");
 }
 
-function goSection(e){
+function goSection(e){// nav 메뉴
     sectionCounter = e.target.getAttribute("datanum");
     $(".nav a").removeClass("on");
     e.target.classList.add("on");
@@ -101,5 +101,38 @@ $(".btn").click(
         }else{
             $(".btn-text").html("다크모드");
         }
+    }
+);
+
+
+
+// bx 슬라이더
+$('#bxslider').bxSlider({
+    auto: true,
+    autoControls: true,
+    stopAutoOnClick: true,
+    pager: true,
+    slideWidth: 600
+  });
+
+// 
+$(".box1 a").click(
+    function(){
+        $(".popup1").fadeIn();
+    }
+);
+$(".box2 a").click(
+    function(){
+        $(".popup2").fadeIn();
+    }
+);
+$(".box3 a").click(
+    function(){
+        $(".popup3").fadeIn();
+    }
+);
+$(".close").click(
+    function(){
+        $(".popup").fadeOut();
     }
 );

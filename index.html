@@ -8,9 +8,15 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"> <!-- bx-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script> <!-- bx-->
+
 </head>
 
 <body>
@@ -27,9 +33,7 @@
             <li><a href="#">about me</a></li>
             <li><a href="#" datanum="0" class="active">profile</a></li>
             <li><a href="#" datanum="1">project</a></li>
-            <li><a href="#" datanum="2">project</a></li>
             <li><a href="#" datanum="3">footer</a></li>
-            <li><a href="#" datanum="4">section$</a></li>
         </ul>
     </nav>
 
@@ -63,21 +67,24 @@
         <section id="profile">
             <div id="notice">
                 <div class="timeline">
-                    <div class="box">
-                        <div class="box_info">
-                            <h1>학력사항</h1>
-                        </div>
-
+                    <div class="groub1">
+                        <img src="img/학력사항.png" alt="">
                     </div>
-                    <div class="box">
+                    <div class="groub2">
+                        <img src="img/자격사항.png" alt="">
+                    </div>
+                    <div class="groub3">
+                        <img src="img/SKILL.png" alt="">
+                    </div>
+                    <!-- <div class="box">
                         <h1>경력사항</h1>
                     </div>
                     <div class="box">
                         <h1>자격사항</h1>
                     </div>
                     <div class="box">
-                        <h1>SKILL</h1>
-                    </div>
+                        <h1>SKILL</h1>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                    </div> -->
                 </div>
             </div>
     
@@ -93,26 +100,56 @@
                 </div>
         </section>
 
-
-
-
-
-
         <section id="work01">
-            <div class="card">
+            <!-- <div class="card">
                 <img src="img/01card.png" alt="">
-            </div>
-            <a href="https://kimtaeyoungs.github.io/oddugi/" target="_blank">
-                <div class="mockup">
-                    <!-- <img src="img/01cardmockup.png" alt=""> -->
-                </div>                    
+            </div> -->
+            <!-- <a href="https://kimtaeyoungs.github.io/oddugi/" target="_blank"> -->
+                <!-- <div class="mockup">
+                    <img src="img/01cardmockup.png" alt=""> 
+                </div>                     -->
+                <div class="mokup_box box1">
+                    <a href="#" class="open">
+                        <img src="img/work01_mockup.jpg" alt="">
+                    </a>
+                    <div id="popup" class="popup popup1">
+                        <div class="popup_body body1">
+                            <iframe src="https://kimtaeyoungs.github.io/oddugi" frameborder="0" width="100%" height="100%"> </iframe>
+                            <button class="close">닫 기</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mokup_box box2">
+                    <a href="#">
+                        <img src="img/work02_mockup.jpg" alt="">
+                    </a>
+                    <div id="popup" class="popup popup2">
+                        <div class="popup_body body2">
+                            <iframe src="https://kimtaeyoungs.github.io/vogue/" frameborder="0" width="100%" height="100%"> </iframe>
+                            <button class="close">닫 기</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mokup_box box3">
+                    <a href="#" >
+                        <img src="img/work02_mockup.jpg" alt="">
+                    </a>   
+                    <div id="popup" class="popup popup3">
+                        <div class="popup_body body2">
+                            <iframe src="https://kimtaeyoungs.github.io/vogue/" frameborder="0" width="100%" height="100%"> </iframe>
+                            <button class="close">닫 기</button>
+                        </div>
+                    </div>
+                </div>
             </a>
             
         </section>
         <section id="work02">
-            <div class="card">
+            <!-- <div class="card">
                 <img src="img/01card.png" alt="">
-            </div>
+            </div> -->
             <a href="https://kimtaeyoungs.github.io/vogue/" target="_blank">
                 <div class="mockup">
                     <!-- <img src="img/01cardmockup.png" alt=""> -->
@@ -128,12 +165,17 @@
                 <!-- <img src="img/01cardmockup.png" alt=""> -->
             </div>
         </section>
-        <section>
+        <section> <!-- bx슬라이더   -->>
             <div class="card">
                 <img src="img/01card.png" alt="">
             </div>
             <div class="mockup">
                 <!-- <img src="img/01cardmockup.png" alt=""> -->
+                <ul id="bxslider">
+                    <li><a href="#none"><img src="img/work01_mockup.jpg" alt="" title="목업1번"></a></li>
+                    <li><a href="#none"><img src="img/work02_mockup.jpg" alt="" title="목업2번"></a></li>
+                    <li><a href="#none"><img src="img/work03_mockup.jpg" alt="" title="목업3번"></a></li>
+                </ul>
             </div>
         </section>
     </div>

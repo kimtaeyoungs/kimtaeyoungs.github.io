@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIA</title>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <style>
+        *{margin:0; padding:0;}
+        #wrap{
+            width:1000px; margin: 0 auto;
+            position: relative;
+        }
+        img{width:100%;}
+        .title.on{
+            position: absolute;
+            width: 640px;
+            height: 454px;
+            left: 112px;
+            top: 776px;
+            transition: .6s;
+            transition-delay: .6s;
+            opacity: 1;
+        }
+        .title{
+            position: absolute;
+            width: 640px;
+            height: 454px;
+            left: 212px;
+            top: 776px;
+            opacity: 0;
+        }
+        .menu1{
+            position: absolute;
+            width: 800px;
+            height: 180px;
+            left: 94px;
+            top: 1311px;
+        }
+        .menu2{
+            position: absolute;
+            width: 800px;
+            height: 180px;
+            left: 94px;
+            top: 1519px;
+        }
+        .menu3{
+            position: absolute;
+            width: 800px;
+            height: 180px;
+            left: 94px;
+            top: 1727px;
+        }
+        .menu4{
+            position: absolute;
+            width: 800px;
+            height: 180px;
+            left: 94px;
+            top: 1935px;
+        }
+        .comment1{
+            position: absolute;
+            width: 386px;
+            height: 562px;
+            left: -106px;
+            top: 2462px;
+            opacity: 0;
+            transition: .6s;
+        }
+        .comment1.on{
+            position: absolute;
+            width: 386px;
+            height: 562px;
+            left: 106px;
+            top: 2462px;
+            opacity: 1;
+        }
+        .comment2{
+            position: absolute;
+            width: 386px;
+            height: 562px;
+            left: 727px;
+            top: 2462px;
+            opacity: 0;
+            transition: .8s;
+        }
+        .comment2.on{
+            position: absolute;
+            width: 386px;
+            height: 562px;
+            left: 527px;
+            top: 2462px;
+            opacity: 1;
+        }
+
+        .heart1{
+            position: absolute;
+            width: 141px;
+            height: 47px;
+            left: 57px;
+            top: 2590px;
+        }
+        .heart2{
+            position: absolute;
+            width: 141px;
+            height: 47px;
+            left: 453px;
+            top: 2543px;
+        }
+        .heart3{
+            position: absolute;
+            width: 141px;
+            height: 47px;
+            left: 402px;
+            top: 2733px;
+        }
+        .heart4{
+            position: absolute;
+            width: 141px;
+            height: 47px;
+            left: 804px;
+            top: 2590px;
+        }
+        .animation{
+            position: absolute;
+            animation: updown 5s infinite;
+        }
+        @keyframes updown{
+            0%{transform: translate(100px, -100px); opacity: 0;}
+            20%{transform: translate(0, 0); opacity: 1;}
+            30%{transform: translate(0, 0); opacity: 1;}
+            50%{transform: translate(-50px, -50px); opacity: 0;}
+            100%{transform: translate(-50px, -50px); opacity: 0;}
+        }
+
+        .menu.on{
+            transform: translateX(0);
+            transition: .6s;
+            opacity: 1;
+        }
+        .menu{
+            transform: translateX(100px);
+            opacity: 0;
+        }
+        .menu.on.menu1{
+            transition-delay: 1.2s;
+        }
+        .menu.on.menu2{
+            transition-delay: 1.4s;
+        }
+        .menu.on.menu3{
+            transition-delay: 1.6s;
+        }
+        .menu.on.menu4{
+            transition-delay: 1.8s;
+        }
+        .heart{
+            transform: translate(20px, 20px);
+            opacity: 0;
+            transition: .6s;
+        }
+        .heart.on{
+            transform: translate(0, 0);
+            opacity: 1;
+        }
+        .heart.on.heart1{
+            transition-delay: .6s;
+        }
+        .heart.on.heart2{
+            transition-delay: .9s;
+        }
+        .heart.on.heart3{
+            transition-delay: 1.2s;
+        }
+        .heart.on.heart4{
+            transition-delay: 1.5s;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <img src="img/animation1.png" alt="" class="animation">
+
+        <img src="img/Frame 1.png" alt="">
+        <img src="img/title.png" alt="" class="title">
+        <img src="img/menu1.png" alt="" class="menu menu1">
+        <img src="img/menu2.png" alt="" class="menu menu2">
+        <img src="img/menu3.png" alt="" class="menu menu3">
+        <img src="img/menu4.png" alt="" class="menu menu4">
+
+        <img src="img/comment1.png" alt="" class="comment1">
+        <img src="img/comment2.png" alt="" class="comment2">
+
+        <img src="img/heart1.png" alt="" class="heart heart1">
+        <img src="img/heart2.png" alt="" class="heart heart2">
+        <img src="img/heart3.png" alt="" class="heart heart3">
+        <img src="img/heart4.png" alt="" class="heart heart4">
+    </div>
+
+    <script>
+        window.addEventListener("load", animation);
+        window.addEventListener("scroll", scr);
+
+        function animation(){
+            $(".title").addClass("on");
+            $(".menu").addClass("on");
+        }
+
+        function scr(){
+            if(scrollY > 2000){
+                $('.comment1').addClass("on");
+                $('.comment2').addClass("on");
+                $('.heart').addClass("on");
+            }else{
+                $('.comment1').removeClass("on");
+                $('.comment2').removeClass("on");
+                $('.heart').removeClass("on");
+            }
+        }
+    </script>
+</body>
+</html>
