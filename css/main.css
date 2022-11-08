@@ -338,8 +338,30 @@ section.on .mockup{
     z-index: 999999;
 }
 
-
-
+/*  */
+.text{
+    position: absolute;
+    width:100%;
+    height:100%;     
+    background:rgba(0,0,0,.3);
+    text-align: center;
+    top:100%;
+    border-radius: 50%;
+}
+.text p{
+    position: absolute;
+    width:100%;
+    top:50%;
+    transform: translateY(-50%);
+    color:#fff;
+}
+.mokup_box a{
+    position:relative;    
+    overflow: hidden;
+}
+.mokup_box a:hover .text{
+    top:0;
+}
 
 
 
