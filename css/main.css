@@ -144,10 +144,15 @@ section:nth-child(even){
 .groub2 img{width: 384px;}
 .groub3 img{width: 600px;}
 #profile{position: relative;}
+.profile img{
+    width: 80%;
+    position: absolute;
+    top: 55%; left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 
-
-
+/* 
 
 #notice{
     width: 70%;
@@ -172,7 +177,7 @@ section:nth-child(even){
     position: absolute;
     left: 30px;
     top: -10%;
-}
+} */
 
 
 
@@ -262,7 +267,7 @@ section.on .mockup{
 .portfolio a{width: 100%;}
 
 .nav{
-    width: 40%;
+    width: 30%;
     display: flex;
 }
 .nav li a{
@@ -297,10 +302,12 @@ section.on .mockup{
 #work01{position: relative;}
 .mokup{
     width: 100%;
-    top: 20%;
+    /* top: 20%;
     transform: translateX(-50%);
-    left: 50%;
+    left: 50%; */
     position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
     justify-content: space-around;
 }
@@ -375,14 +382,15 @@ section.on .mockup{
 /*  */
 #comment{
     position: relative;
+        background: #fff;
 }
 .comment img{
     width: 70%;
     margin: 0 auto;
 
     position: absolute;
-    top: 30%;
-    left: 17%;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /*  */
